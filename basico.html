@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fundamentos Javascript</title>
+    </head>
+    <body>
+        <h1>Fundamentos Javascript</h1>
+        <script>
+            var hola = "Hola Mundo";
+            let hello = "Hello World";
+            console.log(hola);
+            console.log(hello);
+            console.log(window);
+            console.log(window.hola);
+            console.log(window.hello);
+            // Ambito de bloque
+            // Esto es un bloque -- comentario de una linea
+            /*
+            Esto es un comentario
+            de varias lineas
+            */
+            var musica = "Rock";
+            console.log("Variable musica antes del bloque", musica);
+            {
+                musica = "Pop";
+                console.log("Variable musica dentro del bloque", musica)
+            }
+            console.log("Variable musica depues del bloque", musica)
+            let musica2 = "Rock";
+            console.log("Variable musica antes del bloque", musica2);
+            {
+                let musica2 = "Pop";
+                console.log("Variable musica dentro del bloque", musica2)
+            }
+            console.log("Variable musica depues del bloque", musica2)
+            // Las variables constantes no se pueden declarar sin asiganrles un valor
+            const PI = 3.14159;
+            // const NUEVE;
+            console.log(PI);
+            // Las constantes no pueden ser reasignadas
+            a = "Kenai";
+            console.log(a);
+            let objeto = {
+                nombre: "Jhon",
+                edad: 35
+            }
+            let colores = ["Blanco", "Negro", "Gris"];
+            console.log(objeto);
+            console.log(colores);
+            objeto.correo = "joanjose_04@hotmail.com";
+            colores.push("Anaranjado");
+            console.log(objeto);
+            console.log(colores);
+        </script>
+    </body>
+</html>
