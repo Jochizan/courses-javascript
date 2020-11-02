@@ -1,0 +1,33 @@
+const saludar = (nombre="Desconocido") => console.log(`Hola ${nombre}`);
+saludar("Joan");
+saludar();
+// Corto circuito con OR
+console.log("Cadena" || "valor de la derecha");
+console.log("" || "valor de la derecha");
+console.log(18 || "valor de la derecha");
+console.log(-2 || "valor de la derecha");
+console.log(0 || "valor de la derecha");
+console.log(true || "valor de la derecha");
+console.log(false || "valor de la derecha");
+console.log(null || "valor de la derecha");
+console.log(undefined || "valor de la derecha");
+console.log([] || "valor de la derecha");
+console.log({} || "valor de la derecha");
+// Corto circuito con AND
+console.log("Cadena" && "valor de la derecha");
+console.log("" && "valor de la derecha");
+console.log(18 && "valor de la derecha");
+console.log(-2 && "valor de la derecha");
+console.log(0 && "valor de la derecha");
+console.log(true && "valor de la derecha");
+console.log(false && "valor de la derecha");
+console.log([] && "valor de la derecha");
+console.log({} && "valor de la derecha");
+console.log(1 & 0);
+console.log(1 | 0);
+console.log(0 & 1);
+console.log(0 | 1);
+console.log(1 & 1);
+console.log(1 | 1);
+console.log(0 & 0);
+console.log(0 | 0);
