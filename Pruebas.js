@@ -47,3 +47,15 @@ const repeated = str => {
 
 const e = repeated('this is a repeated word test this is a a')
 console.log(e)
+
+const isPalindrom = (str) => {
+    str = str.replace(/\s/g, '');
+    const lowered = str.toLowerCase();
+    const splitted = lowered.split('');
+    const reversed = splitted.reverse();
+    const joined = reversed.join('');
+    return lowered == joined;
+}
+
+const f = isPalindrom('Do geese see God');
+console.log(f);
