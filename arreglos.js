@@ -7,7 +7,7 @@ const c = Array.of("X", "Y", "Z", 9, 8, 7);
 console.log(c);
 const d = Array(100).fill(false);
 console.log(d);
-// e y f ya no se usan mucho
+// e y f ya no se recomienda usar
 const e = new Array();
 console.log(e);
 const f = new Array(1, 2, 3, false, true);
