@@ -1,7 +1,7 @@
 console.log(console);
 console.error("Esto es un error");
 console.warn("Esto es un aviso");
-console.info("Hola este esto es una informativo");
+console.info("Hola este esto es un mensaje informativo");
 console.log("Un registro de lo que a pasado en nuestra aplicacion");
 
 let nombre = "Joan",
