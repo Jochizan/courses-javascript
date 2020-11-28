@@ -1,15 +1,26 @@
-const paresImpares = (array=[]) => {
+const paresImpares = (array=undefined) => {
+  if (array === undefined) {
+    return console.warn("No ingresaste un arreglo de números");
+  }
+  if (!(array instanceof Array)) {
+    return console.error("El valor que ingresaste no es un arreglo");
+  }
   if (!array.length) {
-    return console.warn("Ingreso un array vacío");
+    return console.warn("El arreglo esta vacío");
+  }
+  for (let num of array) {
+    if (typeof num !==  "number") {
+      return console.error(`El valor "${num}" ingresado, NO es un número`);
+    }
   }
   const ans = {
     pares: [],
     impares: []
   };
-  array.map((value, index) => {
+  array.map((value) => {
     (value % 2 === 0)
-      ? ans.pares.push(array[index])
-      : ans.impares.push(array[index]);
+      ? ans.pares.push(value)
+      : ans.impares.push(value);
   });
   return console.info(ans);
 }
