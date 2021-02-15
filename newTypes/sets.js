@@ -25,6 +25,7 @@ console.log("Recorriendo Set 2");
 set2.forEach(item => console.log(item));
 
 // Array.from convierte a arreglos los sets
+console.log(Array.from(set2)[0]);
 console.log(Array.from(set2)[1]);
 
 // Eliminamos con delete
