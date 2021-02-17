@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB APIs</title>
+    <style>
+      :root {
+        --yellow-color: #f7df1e;
+        --dark-color: #222;
+      }
+
+      .cards {
+        border: thin solid var(--dark-color);
+        padding: 1rem;
+      }
+      
+      .card {
+        display: inline-block;
+        background-color: var(--dark-color);
+        color: var(--yellow-color);
+      }
+
+      .card figcaption {
+        padding: 1rem;
+      }
+
+      .rotate-45 {
+        transform: rotate(45deg);
+      }
+
+      .rotate-135 {
+        transform: rotate(135deg);
+      }
+
+      .opacity-80 {
+        opacity: .8;
+      }
+
+      .sepia {
+        filter: sepia(1);
+      }
+    </style>
+  </head>
+  <body style="font-family: Arial">
+    <h1>WEB APIs</h1>
+    <h2>DOM: Document Object Model</h2>
+    <h2>BOM: Browser Object Model</h2>
+    <h2>CSSOM: CSS Object Model</h2>
+    <h2>WEB APIs</h2>
+    <ul>
+      <li>Eventos</li>
+      <li>Forms</li>
+      <li>AJAX - Fetch</li>
+      <li>History</li>
+      <li>Web Storage</li>
+      <li>Geolocation</li>
+      <li>Drag & Drop</li>
+      <li>Indexed DB</li>
+      <li>Canvas</li>
+      <li>MatchMedia</li>
+      <li>etc</li>
+    </ul>
+    <br />
+    <hr />
+    <br />
+    <h3>Manejo del DOM</h3>
+    <p id="que-es">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis mollitia
+      dolorem sint, reprehenderit expedita, odio unde maxime saepe voluptatibus
+      libero harum similique dolor rerum? Adipisci atque quaerat aut libero nam.
+    </p>
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Sección 1</a></li>
+        <li><a href="#">Sección 2</a></li>
+        <li><a href="#">Sección 3</a></li>
+        <li><a href="#">Sección 4</a></li>
+        <li><a href="#">Sección 5</a></li>
+      </ul>
+    </nav>
+    <input type="text" name="nombre" placeholder="Nombre" />
+    <a
+      class="link-dom"
+      href="DOM.html"
+      data-description="Document Object Model"
+      data-id="1"
+      style="background-color: #f7df1e; color: #222"
+      >DOM</a
+    >
+    <section class="cards">
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/tech" alt="Tech" />
+        <figcaption>Tech</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+        <figcaption>Animals</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/people" alt="People" />
+        <figcaption>People</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/arch" alt="Arch" />
+        <figcaption>Arch</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+        <figcaption>Nature</figcaption>
+      </figure>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
