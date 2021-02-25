@@ -15,7 +15,7 @@
         border: thin solid var(--dark-color);
         padding: 1rem;
       }
-      
+
       .card {
         display: inline-block;
         background-color: var(--dark-color);
@@ -35,11 +35,29 @@
       }
 
       .opacity-80 {
-        opacity: .8;
+        opacity: 0.8;
       }
 
       .sepia {
         filter: sepia(1);
+      }
+
+      .eventos-flujo div {
+        padding: 4rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .uno {
+        background-color: yellow;
+      }
+
+      .dos {
+        background-color: gold;
+      }
+
+      .tres {
+        background-color: lightyellow;
       }
     </style>
   </head>
@@ -113,10 +131,45 @@
     </section>
     <template id="template-card">
       <figure class="card">
-      <img>
-      <figcaption></figcaption>
+        <img />
+        <figcaption></figcaption>
       </figure>
     </template>
-    <script src="index.js"></script>
+    <h3>Eventos en Javacript</h3>
+    <h4>Manejadores de Eventos</h4>
+    <button onclick="holaMundo()">Evento con atributo HTML</button>
+    <br /><br />
+    <button id="evento-semantico">Evento con manejador semántico</button>
+    <br /><br />
+    <button id="evento-multiple">Evento con manejador múltiple</button>
+    <br /><br />
+    <button id="evento-remover">
+      Removiendo eventos con manejadores múltiples
+    </button>
+    <br /><br />
+    <h4>Flujo de Eventos</h4>
+    <section class="eventos-flujo">
+      <div class="uno">
+        1
+        <div class="dos">
+          2
+          <div class="tres">
+            3
+            <a href="https://jonmircha.com/" target="_blank" rel="noopener"
+              >jonmircha.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <h3>Manejo del BOM</h3>
+    <button id="abrir-ventana">Abrir Ventana</button>
+    <br /><br />
+    <button id="cerrar-ventana">Cerrar Ventana</button>
+    <br /><br />
+    <button id="imprimir-ventana">Imprimir Ventana</button>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="bom.js"></script>
   </body>
 </html>

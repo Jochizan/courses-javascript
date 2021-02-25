@@ -5,7 +5,18 @@
 // let text = "Hola, Soy Joan";
 // const hablar = (text) => speechSynthesis.speak(new SpeechSynthesisUtterance(text));
 // hablar(text);
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* MÉTODOS QUE EXTIENDEN DE DOCUMENT */
 
 // console.log("------ Elementos del documento -----");
@@ -26,7 +37,18 @@
 //   console.log(document.getSelection().toString());
 // }, 3000);
 // document.write("<h2>Hola mundo desde el DOM</h2>");
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* PARA OBTENER PARTES DE LA PÁGINA WEB */
 
 // console.log(document.getElementsByTagName("li"));
@@ -43,7 +65,18 @@
 // console.log(document.querySelectorAll(".card")[2]);
 // console.log(document.querySelector("#menu li"));
 // console.log(document.querySelectorAll("#menu li"));
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* ATRIBUTOS Y DATA-ATTRIBUTES */
 
 // console.log(document.documentElement.lang);
@@ -64,7 +97,18 @@
 // console.log($linkDOM.hasAttribute("rel"));
 // $linkDOM.removeAttribute("rel");
 // console.log($linkDOM.hasAttribute("rel"));
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Data-Attributes */
 
 // console.log($linkDOM.getAttribute("data-description"));
@@ -77,7 +121,18 @@
 // console.log($linkDOM.hasAttribute("data-id"));
 // console.log($linkDOM.removeAttribute("data-id"));
 // console.log($linkDOM.hasAttribute("data-id"));
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Styles of elements HTML */
 
 // const $linkDOM = document.querySelector(".link-dom");
@@ -101,7 +156,18 @@
 // console.log($linkDOM.style);
 // console.log($linkDOM.getAttribute("style"));
 // console.log(getComputedStyle($linkDOM));
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Variables CSS - Custom Properties CSS */
 
 // const $html = document.documentElement,
@@ -118,7 +184,18 @@
 // $html.style.setProperty("--dark-color", "#000")
 // varDarkColor = getComputedStyle($html).getPropertyValue("--dark-color");
 // $body.style.setProperty("background-color", varDarkColor);
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Clases de CSS */
 
 // const $card = document.querySelector(".card");
@@ -143,7 +220,18 @@
 // $card.classList.remove("opacity-80", "sepia");
 // $card.classList.toggle("opacity-80", "sepia");
 // $card.classList.toggle("opacity-80", "sepia");
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Texto and HTML */
 
 // const $whatDOM = document.getElementById("que-es");
@@ -165,7 +253,18 @@
 // $whatDOM.textContent = text;
 // $whatDOM.innerHTML = text;
 // $whatDOM.outerHTML = text;
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Traversing del DOM */
 
 // const $cards = document.querySelector(".cards");
@@ -181,7 +280,18 @@
 // console.log($cards.closest("div"));
 // console.log($cards.closest("body"));
 // console.log($cards.children[3].closest("section"));
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Creando elementos y fragmentos */
 
 // const $figure = document.createElement("figure"),
@@ -247,7 +357,18 @@
 // document.write("<h3>Meses del Año</h3>");
 // $ul3.appendChild($fragment);
 // document.body.appendChild($ul3);
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Templates HTML */
 
 // const $cards = document.querySelector(".cards"),
@@ -286,7 +407,18 @@
 // })
 
 // $cards.appendChild($fragment);
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* Modificando Elementos (Old Style) */
 
 // const $cards = document.querySelector(".cards"),
@@ -308,7 +440,18 @@
 
 // Clonar
 // document.body.appendChild($cloneCards);
-
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 /* 
 .insertAdjacent...
     .insertAdjacentElement(position,el)
@@ -324,23 +467,135 @@ posiciones:
 
 /* Modificando Elementos (Cool Style) */
 
-const $cards = document.querySelector(".cards"),
-  $newCard = document.createElement("figure");
+//const $cards = document.querySelector(".cards"),
+//$newCard = document.createElement("figure");
 
 // $newCard.innerHTML = `
-  // <img src="https://placeimg.com/200/200/any" alt="Any">
-  // <figcaption>Any</figcaption>
+// <img src="https://placeimg.com/200/200/any" alt="Any">
+// <figcaption>Any</figcaption>
 // `;
-let $contentCard = `
-  <img src="https://placeimg.com/200/200/any" alt="Any">
-  <figcaption></figcaption>
-`
+//let $contentCard = `
+//<img src="https://placeimg.com/200/200/any" alt="Any">
+//<figcaption></figcaption>
+//`
 
-$newCard.classList.add("card");
-$newCard.insertAdjacentHTML("beforeend", $contentCard);
-$newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any");
+//$newCard.classList.add("card");
+//$newCard.insertAdjacentHTML("beforeend", $contentCard);
+//$newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any");
 // $cards.insertAdjacentElement("afterbegin", $newCard);
 // $cards.before($newCard);
 // $cards.after($newCard);
 // $cards.prepend($newCard);
 // $cards.append($newCard);
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+/* Eventos con Manejadores, paso de Parametros y Removiendo Eventos */
+
+// event esta en desuso
+// parentesis representa ejecución inmediata
+// function holaMundo() {
+//   alert("Hola mundo 1");
+//   console.log(event);
+// }
+
+// function saludar(nombre = "Desconocid@") {
+//   alert(`Hola ${nombre}`);
+// }
+
+// const $eventoSemantico = document.getElementById("evento-semantico"),
+//   $eventoMultiple = document.getElementById("evento-multiple"),
+//   $eventoRemover = document.getElementById("evento-remover");
+
+// $eventoSemantico.onclick = holaMundo;
+// $eventoSemantico.onclick = function (e) {
+//   console.log("Hola mundo");
+//   console.log(e);
+//   console.log(event);
+// };
+
+// $eventoMultiple.addEventListener("click", holaMundo);
+// $eventoMultiple.addEventListener("click", (e) => {
+//   alert("Hola Mundo 2");
+//   console.log("Hola mundo");
+//   console.log(e);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(event);
+// });
+// $eventoMultiple.addEventListener("click", () => {
+//   saludar();
+//   saludar("Joan");
+// });
+
+// const removerDobleClick = (e) => {
+//   alert(`Removiendo el evento de tipo ${e.type}`);
+//   console.log(e);
+//   $eventoRemover.removeEventListener("dblclick", removerDobleClick);
+//   $eventoRemover.disabled = true;
+// };
+
+// $eventoRemover.addEventListener("dblclick", removerDobleClick);
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+/* Flujo de Eventos  y Delegación de Eventos */
+
+const $divsEventos = document.querySelectorAll(".eventos-flujo div"),
+  $linkEventos = document.querySelector(".eventos-flujo a");
+
+function flujoEventos(e) {
+  console.log(
+    `Hola te saluda ${this}, el click lo originó ${e.target.className}`
+  );
+}
+
+document.addEventListener("click", (e) => {
+  console.log("Click en", e.target);
+  if (e.target.matches(".eventos-flujo div")) {
+    flujoEventos(e);
+  }
+  if (e.target.matches(".eventos-flujo a")) {
+    alert("Hola soy tu enemigo");
+    e.preventDefault();
+  }
+});
+
+// $divsEventos.forEach((div) => {
+//   // Fase de burbuja por defecto false el tercer parametro
+//   // div.addEventListener("click", flujoEventos);
+//   div.addEventListener("click", flujoEventos, false);
+
+//   // Fase de captura poniendo el tercer parametro en true
+//   // div.addEventListener("click", flujoEventos, true);
+
+//   // Pasar más parametros por objeto
+//   // div.addEventListener("click", flujoEventos, {
+//   //   capture: true,
+//   //   once: true
+//   // })
+// });
+
+// $linkEventos.addEventListener("click", (e) => {
+//   alert("Hola soy tu enemigo");
+//   e.preventDefault();
+//   e.stopPropagation();
+// })
