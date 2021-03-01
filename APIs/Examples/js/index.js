@@ -8,6 +8,11 @@ import responsiveMedia from "./objResponsive.js";
 import responsiveTester from "./testerResponsive.js";
 import userDeviceInfo from "./detectionDevice.js";
 import networkStatus from "./detectionNetwork.js";
+import webCam from "./detectionWebCam.js";
+import getGeolocation from "./geolocation.js";
+import searchFilters from "./searchFilters.js";
+import draw from "./sorteo.js";
+import slider from "./carrusel.js";
 
 const d = document;
 
@@ -35,6 +40,11 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
   responsiveTester("responsive-tester");
   userDeviceInfo("user-device");
+  webCam("web-cam");
+  getGeolocation("geolocation");
+  searchFilters(".card-filter", ".card");
+  draw("#winner-btn", ".player");
+  slider();
 });
 
 d.addEventListener("keydown", (e) => {
