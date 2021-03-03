@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulación no reactiva</title>
+  </head>
+  <body>
+    <h1>Manipulación no reactiva del DOM</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-item" placeholder="Tarea por hacer" />
+      <input type="submit" value="Agregar" />
+    </form>
+    <h2>Lista de tareas</h2>
+    <ul id="todo-list"></ul>
+    <script>
+      const d = document;
+      const $item = d.getElementById("todo-item");
+      const $list = d.getElementById("todo-list");
+
+      d.addEventListener("submit", (e) => {
+        if (!e.target.matches("#todo-form")) return false;
+
+        // Agregar item a la lista
+        e.preventDefault();
+        let $li = d.createElement("li");
+        $li.textContent = $item.value;
+        $list.appendChild($li);
+        
+        // Limpiar el input
+        $item.value = "";
+        $item.focus();
+      });
+    </script>
+  </body>
+</html>

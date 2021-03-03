@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reactividad</title>
+  </head>
+  <body>
+    <h1>Manipulación Reactiva del DOM</h1>
+    <h3>Interfaz basada en el "estado"</h3>
+    <form id="todo-form">
+      <input type="text" id="todo-item" placeholder="Tarea por hacer" />
+      <input type="submit" value="Agregar" />
+    </form>
+    <h2>Lista de tareas</h2>
+    <ul id="todo-list"></ul>
+    <script src="js/Component.js"></script>
+    <script>
+      const app = new Component({
+        el: "#todo-list",
+        data: {
+          todoList: [],
+        },
+        template(props) {
+          if (props.todoList.length < 1) {
+            return `<p><em>Lista sin tareas por hacer </em></p>`;
+          }
+
+          let todos = props.todoList.map((item) => `<li>${item}</li>`).join("");
+          return todos;
+        },
+      });
+
+      // El state
+      const state = {
+        todoList: [],
+        nombre: "Joan",
+      };
+
+      d.addEventListener("DOMContentLoaded", app.render);
+
+      // Estableciendo valores por defecto al State
+      app.setState({
+        todoList: ["Tarea 1", "Tarea 2", "Tarea 3"],
+      });
+
+      d.addEventListener("submit", (e) => {
+        if (!e.target.matches("#todo-form")) return false;
+
+        // Agregar item a la lista
+        e.preventDefault();
+        const $item = d.getElementById("todo-item");
+        if (!$item) return;
+
+        // Actualizar el state de forma reactiva
+        const lastState = app.getState();
+        lastState.todoList.push($item.value);
+        app.setState({ todoList: lastState.todoList });
+
+        // Limpiar el input
+        $item.value = "";
+        $item.focus();
+      });
+    </script>
+  </body>
+</html>
