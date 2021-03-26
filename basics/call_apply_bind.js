@@ -29,6 +29,7 @@ const persona = {
 persona.saludar();
 
 const otraPersona = {
+  nombre: "Joshe",
   saludar: persona.saludar.bind(this)
 }
 
