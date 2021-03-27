@@ -1,7 +1,7 @@
 const d = document;
 const ls = localStorage;
 
-export default function darkTheme(btn, classDark) {
+export default function dark_theme(btn, classDark) {
   const $themeBtn = d.querySelector(btn);
   const $selectors = d.querySelectorAll("[data-dark]");
 
