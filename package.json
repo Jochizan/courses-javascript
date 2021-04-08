@@ -1,0 +1,21 @@
+{
+  "name": "js-profesional",
+  "version": "1.0.0",
+  "description": "Curso profesional de JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "live-server"
+  },
+  "keywords": [
+    "JavaScript",
+    "PlatziVideo",
+    "MediaPlayer",
+    "platzi"
+  ],
+  "author": "Joan Roca Hormaza",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
