@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.ceviches {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ceviches > * {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.ceviche {
+  background-color: crimson;
+  color: chartreuse;
+  font-size: 125%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.ceviche:hover {
+  opacity: .9;
+  transform: scale(.9);
+}
+
+.ceviche img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ceviche figcaption {
+  padding: 1rem;
+}
