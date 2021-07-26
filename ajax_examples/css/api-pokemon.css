@@ -1,0 +1,14 @@
+html {
+  text-align: center;
+}
+
+.grid-fluid {
+  display: grid;
+  grid-template: auto / repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+}
+
+.loader {
+  display: block;
+  margin: auto;
+}
