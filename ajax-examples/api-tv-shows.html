@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./css/api-pokemon.css'>
+    <title>Buscador Shows de TV</title>
+  </head>
+  <body>
+    <h1>Buscador Shows de TV</h1>
+    <label for='search'>Buscar</label>
+    <input type='search' id='search' placeholder='Buscar shows de tv...' autocomplete='off'>
+    <section id='shows' class='grid-fluid'></section>
+    <template id='show-template'>
+      <article class='show'>
+        <h3 id='title'></h3>
+        <div></div>
+        <img src='' alt=''>
+        <a href=''></a>
+      </article>
+    </template>
+    <script src='./js/api_tv_shows.js'></script>
+  </body>
+</html>
