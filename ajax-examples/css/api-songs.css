@@ -1,0 +1,33 @@
+html {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.loader {
+  display: none;
+  margin: auto;
+}
+
+.song blockquote {
+  white-space: pre-wrap;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    flex-direction: row;
+  }
+
+  main > * {
+    padding: 1rem;
+    flex-basis: 50%;
+  }
+}
